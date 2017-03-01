@@ -12,9 +12,7 @@ class Footer extends React.Component {
 
 				<div className="infog">
 				    <img className="logo2" alt="" src={logo}/>
-				    <p>Copyright 2017©My Vintage Bike</p>
-				</div>
-				
+				</div>				
 				<div className="CGA">
 					<ul>
 						<li>FAQ</li>
@@ -23,6 +21,9 @@ class Footer extends React.Component {
 						<li>CONDITIONS GÉNÉRALES DE VENTE</li>
 					</ul>
 				</div>
+			<div className="cop">
+				    <p>Copyright 2017©My Vintage Bike</p>
+			</div>		
 			</div>
 
 	    )

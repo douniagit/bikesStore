@@ -7,23 +7,21 @@ class Card extends React.Component {
 
     constructor(props){
     super(props);
-    this.initClick=this.initClick.bind(this);
-  }
-
-    initClick(){
-      this.props.openModal(this.props.bool);
+    this.state={
+      produits:"NOS PRODUITS"
     }
-
+   
+  }
 
   render() {
     return (
       <div className="container">
 
           <div className="content">
-            <div className="intro"><h1> NOS PROPOSITIONS </h1>
+            <div className="intro"><h1> {this.state.produits} </h1>
             </div>
               { contenu.carte.map(menu =>
-                <div onClick={this.initClick} className="Card">
+                <div className="Card">
                   <img src={menu.image} alt="" className="img"/>
                   <div className="text">
                     <div className="title">{menu.name}</div>
@@ -31,7 +29,7 @@ class Card extends React.Component {
                   </div>
                   <div className="price">{menu.price}</div>
                    <div className="addbox">
-                    <a href="#"><div className="add" onClick={() => this.props.addItemCard([menu.name, menu.price])}>Ajouter</div></a>
+                    <a href="#"><div className="add" onClick={this.initClick} onClick={() => this.props.addItemCard([menu.name, menu.price])}>Ajouter</div></a>
                     </div>
                   </div>
                 )}
