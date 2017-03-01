@@ -1,0 +1,158 @@
+
+/*-----------------NavBar------------------*/
+.navbar {
+	position:fixed;
+	width: 100%;
+	height: 60px;
+	opacity: 0.9;
+	background-color: black;
+	border-bottom: 1px solid #dadada;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: center;
+}
+.wrapper{
+	width:23%;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: center;
+	margin-right:70px;
+}
+.logo{
+	width:400px;
+	margin-left: 20px;
+	border:2px solid red;
+}
+.logoT{
+	width:100%;
+	margin-top:150px;
+	margin-left:-100px;
+	transform:rotate(-10deg);
+}
+
+.menu{
+	width:50%;
+	/*padding-right:15px;*/
+}
+
+.menu ul{
+	display: flex;
+	flex-direction:row;
+	list-style: none;
+	justify-content: space-around;
+	padding:0;
+}
+
+.inscription{
+	width: 59px;
+	height: 15px;
+	font-family:'Roboto', sans-serif;
+	font-size: 20px;
+	text-align: left;
+	color: #CB960F;
+	text-decoration:none;
+	border-right: 1px solid #dadada;
+	padding-right: 20px;
+	margin-right: 20px;
+}
+
+.connexion{
+	width: 55px;
+	height: 11px;
+	font-family:'Roboto', sans-serif;
+	font-size: 20px;
+	text-align: left;
+	color: #CB960F;
+	text-decoration:none;
+	padding-right: 20px;
+	border-right: 1px solid #dadada;
+}
+
+.fa-shopping-cart{
+	margin-left:20px;
+	color:#CB960F;
+	font-size:20px;
+}
+
+.fa-shopping-cart:hover{
+	color:#99F9E4;
+	transition:0.15s;
+}
+.menu ul li>a:hover{
+	color:#99F9E4;
+}
+/*--------------------background-------------*/
+.back{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	color:white;
+	background-image: url('https://ohror.files.wordpress.com/2015/06/3651429-11362910.jpg');
+	background-position:center;
+	background-size: cover;
+	background-attachment: fixed;
+	transition: 3s;
+	z-index: -100;
+	width: 100%;
+	height: 535px;
+}
+
+/*-----------------bande etape--------------*/
+.bande{
+	background-color: #99F9E4;
+	width:100%;
+	height:60px;
+}
+.steps{
+	display:flex;
+	align-items:center;
+}
+.steps ul{
+	padding-left:0;
+	padding-top:22px;
+	margin:0;
+	width:100%;
+	color:white;
+	font-family:'Roboto', sans-serif;
+	list-style:none;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	background-color: #99F9E4;
+	justify-content:space-around;
+}
+.steps ul li{
+	display:inline-block;
+	text-decoration:none;
+
+	
+}
+.steps ul li{
+	position:relative;
+	transition:0.15s;
+}
+
+.steps ul li:hover{
+	color:#CB960F;
+}
+.steps ul ul{
+	display:none;
+	position:absolute;
+	width:200px;
+}
+.steps ul li:hover > ul{
+	display:block;
+}
+
+a{
+	transition:0.15s;
+	text-decoration: none;
+	color:white;
+}
+a:hover{
+	color:#CB960F;
+}
