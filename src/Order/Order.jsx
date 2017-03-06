@@ -10,6 +10,8 @@ class Order extends React.Component {
     		<div className="">
     			<img src="./img/Icone1.png" alt="order"/>
     		</div>
+        <br/>
+       
     </div>
 
 

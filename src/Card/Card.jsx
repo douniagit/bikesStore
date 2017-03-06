@@ -32,7 +32,7 @@ class Card extends React.Component {
                     <a href="#"><div className="add" onClick={this.initClick} onClick={() => this.props.addItemCard([menu.name, menu.price])}>Ajouter</div></a>
                     </div>
                   </div>
-                )}
+                )}        
           </div>
         <Order />
       </div>

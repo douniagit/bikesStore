@@ -1,0 +1,49 @@
+.contentB{
+	background-image: url("http://dailygeekshow.com/wp-content/uploads/2016/09/roue-egypte.jpg");
+	background-position:center;
+	background-size: cover;
+}
+.contentB h1{
+	color:white;
+	padding-top: 20px;
+	text-align: center;
+}
+.img2{
+	width:100%;
+}
+.wraph{
+	overflow:hidden;
+	overflow-x: scroll;
+}
+.history{
+	display: flex;
+	flex-direction: row;
+	width:200%;
+}
+.box{
+	display: flex;
+	flex-direction:column;
+	overflow-y: scroll;
+	width:400px;
+	height:52vh;
+	border:5px solid black;
+	margin:10px;
+	background-color:lightgrey;
+}
+.box:hover{
+	background-color: grey;
+	opacity:0.7;
+}
+.title2{
+	margin:20px;
+	font-size:20px;
+	font-weight:bold;
+}
+.text2{
+	margin-top:40px;
+}
+.desc2{
+	text-align:left;
+	margin:12px;
+	color:white;
+}

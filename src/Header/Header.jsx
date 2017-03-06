@@ -17,7 +17,7 @@ class Header extends React.Component {
 				<div className="steps">
 					<ul>
 						<li>Accueil</li>
-						<li><Link href="/histoire" >Histoire du vélo</Link></li>
+						<li><Link to="/histoire" >Histoire du vélo</Link></li>
 						<li>Nos vélos
 							<ul className="info">
 								<li><Link to="/activites">Grands Bi</Link></li>
