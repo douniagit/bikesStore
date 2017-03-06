@@ -120,7 +120,6 @@
 	list-style:none;
 	display:flex;
 	flex-direction:row;
-	align-items:center;
 	background-color: #99F9E4;
 	justify-content:space-around;
 }
@@ -145,6 +144,8 @@
 }
 .steps ul li:hover > ul{
 	display:block;
+	display:flex;
+	flex-direction:column;
 }
 
 a{
