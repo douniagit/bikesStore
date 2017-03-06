@@ -4,7 +4,7 @@
   flex-direction:row;
   align-items: center;
 	width: 100%;
-  height: 100px;
+  height: 70px;
   font-family:'Roboto', sans-serif;
   background-color: black;
   box-shadow: -1px 0px 3px 0 rgba(0, 0, 0, 0.35);
@@ -12,35 +12,37 @@
   overflow: hidden;
 }
 .infog{
-  width:40%;
-  border:2px solid red;
-
+  width:15%;
 }
 .cop p{
 	width: 100%;
   font-family:'Roboto', sans-serif;
   font-size: 11px;
   font-weight: 300;
- /* margin-left:87px;*/
   margin-top:0;
-  border:2px solid red;
   color: #CB960F;
 }
 
 .logo2{
-	width: 195px;
+	width: 80%;
 }
 .CGA ul{
   display:flex;
   flex-direction:row;
+  justify-content: space-around;
   list-style:none;
 }
 .CGA ul li{
   margin-left:20px;
 }
 .CGA{
-  width:50%;
+  width:70%;
 }
 .CGA ul li:hover{
   color:#99F9E4;
+}
+.contentF{
+  text-align:center;
+  background-color: black;
+  padding-bottom:10px;
 }

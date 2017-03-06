@@ -8,6 +8,7 @@ class Footer extends React.Component {
 
 	render(){
 		return(
+		<div className="contentF">
 			<div className="footer">
 
 				<div className="infog">
@@ -21,10 +22,11 @@ class Footer extends React.Component {
 						<li>CONDITIONS GÉNÉRALES DE VENTE</li>
 					</ul>
 				</div>
+			</div>
 			<div className="cop">
 				    <p>Copyright 2017©My Vintage Bike</p>
 			</div>		
-			</div>
+		</div>	
 
 	    )
 
