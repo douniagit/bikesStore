@@ -3,7 +3,7 @@ import Navbar from "./navbar/Navbar.jsx";
 import Card from "./Card/Card.jsx";
 import Footer from "./footer/Footer.jsx";
 import Header from "./Header/Header.jsx";
-
+//import Shop from "./Shop/Shop.jsx";
 
 class App extends Component {
   render() {
@@ -13,6 +13,7 @@ class App extends Component {
         <Header />
         <Card />
         <Footer />
+        {/*<Shop />*/}
       </div>
     );
   }

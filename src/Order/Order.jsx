@@ -2,7 +2,7 @@ import React from 'react';
 import './order.css';
 import contenu from '../Card/data.js';
 //import Card from '../Card/Card.jsx';
-import Panier from '../Panier/Panier.jsx';
+//import Panier from '../Panier/Panier.jsx';
 
 
 class Order extends React.Component {
@@ -32,7 +32,7 @@ class Order extends React.Component {
     			<img src="./img/Icone1.png" alt="order"/>
     		</div>
         <br/>
-      <Panier purchase={this.state.purchase} />
+    {/*}  <Panier purchase={this.state.purchase} />
         
        {
           this.state.products.map(product =>{
@@ -42,7 +42,7 @@ class Order extends React.Component {
                  add={this.add.bind(this)} />)}
             // props product = {product} est chaque objet de products
           )
-        }
+        }*/}
     </div>
 
 

@@ -4,15 +4,21 @@ import contenu from './data.js';
 import Order from '../Order/Order.jsx';
 
 class Card extends React.Component {
-  constructor(){
-    super();
-    this.state = {
-      products: contenu
-    }
-  }
 
-initClick() {
-    this.props.add(this.props.product);
+    constructor(){
+        super();
+        this.state = {
+          bike: contenu,
+          purchase: []
+        }
+     }
+
+
+
+
+initClick(product) {
+   console.log("product", product);
+   // this.setState({ purchase: bike.push[]});
   }
 
 
@@ -23,8 +29,8 @@ initClick() {
           <div className="content">
             <div className="intro"><h1> NOS PRODUITS </h1>
             </div>
-              { this.state.products.carte.map(product =>
-                <div className="Card">
+              { this.state.bike.carte.map(product =>
+                <div className="Card" key={product.id}>
                   <img src={product.image} alt="" className="img"/>
                   <div className="text">
                     <div className="title">{product.name}</div>
@@ -33,12 +39,12 @@ initClick() {
                   <div className="price">{product.price}</div>
                   {/*<p className="qty">{product.quantity}</p>*/}
                    <div className="addbox">
-                    <a><div className="add" onClick={this.initClick.bind(this)}>Ajouter</div></a>
+                    <div className="add" onClick={()=> this.initClick(product)}>Ajouter</div>
                     </div>
                   </div>
                 )}        
           </div>
-       <Order />
+       <Order/>
       </div>
 
 

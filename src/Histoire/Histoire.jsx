@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from "../navbar/Navbar.jsx";
 import Footer from "../footer/Footer.jsx";
 import Header from "../Header/Header.jsx";
-import {Router, Route, Link } from 'react-router';
 import contenu from '../Card/data.js';
 import "./histoire.css";
 

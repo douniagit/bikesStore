@@ -1,7 +1,6 @@
 import React from 'react';
 import { Router, Route} from 'react-router';
 import App from './App.js';
-import Card from './Card/Card.jsx';
 import Inscription from './Inscription/Inscription.jsx';
 import Connexion from './Connexion/Connexion.jsx';
 import Histoire from './Histoire/Histoire.jsx';
