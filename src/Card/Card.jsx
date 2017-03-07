@@ -4,37 +4,41 @@ import contenu from './data.js';
 import Order from '../Order/Order.jsx';
 
 class Card extends React.Component {
-
-    constructor(props){
-    super(props);
-    this.state={
-      produits:"NOS PRODUITS"
+  constructor(){
+    super();
+    this.state = {
+      products: contenu
     }
-   
   }
+
+initClick() {
+    this.props.add(this.props.product);
+  }
+
 
   render() {
     return (
       <div className="container">
 
           <div className="content">
-            <div className="intro"><h1> {this.state.produits} </h1>
+            <div className="intro"><h1> NOS PRODUITS </h1>
             </div>
-              { contenu.carte.map(menu =>
+              { this.state.products.carte.map(product =>
                 <div className="Card">
-                  <img src={menu.image} alt="" className="img"/>
+                  <img src={product.image} alt="" className="img"/>
                   <div className="text">
-                    <div className="title">{menu.name}</div>
-                    <div className="desc">{menu.description}</div>
+                    <div className="title">{product.name}</div>
+                    <div className="desc">{product.description}</div>
                   </div>
-                  <div className="price">{menu.price}</div>
+                  <div className="price">{product.price}</div>
+                  {/*<p className="qty">{product.quantity}</p>*/}
                    <div className="addbox">
-                    <a href="#"><div className="add" onClick={this.initClick} onClick={() => this.props.addItemCard([menu.name, menu.price])}>Ajouter</div></a>
+                    <a><div className="add" onClick={this.initClick.bind(this)}>Ajouter</div></a>
                     </div>
                   </div>
                 )}        
           </div>
-        <Order />
+       <Order />
       </div>
 
 

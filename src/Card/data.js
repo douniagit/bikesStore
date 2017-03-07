@@ -44,7 +44,7 @@ const contenu = {
             },
             {
               "id": "grandbi",
-              "name": "GRAND BI",
+              "name": "GRAND BII",
               "image": "http://www.amis-de-megeve.com/image/1307276445.jpg",
               "description": "Grand Bi de 1890 en bois, excellent etat, piece unique",
               "price": "1040.00€",

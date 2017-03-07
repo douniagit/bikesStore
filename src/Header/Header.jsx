@@ -20,16 +20,16 @@ class Header extends React.Component {
 						<li><Link to="/histoire" >Histoire du vélo</Link></li>
 						<li>Nos vélos
 							<ul className="info">
-								<li><Link to="/activites">Grands Bi</Link></li>
-								<li><Link to="/activites">Tandems</Link></li>
-								<li><Link to="/activites">Bicyclettes</Link></li>
-								<li><Link to="/activites">Vélos pliants</Link></li>
+								<li><Link to="/">Grands Bi</Link></li>
+								<li><Link to="/">Tandems</Link></li>
+								<li><Link to="/">Bicyclettes</Link></li>
+								<li><Link to="/">Vélos pliants</Link></li>
 							</ul>
 						</li>
 						<li>Nos Accessoires
 							<ul className="info">
-								<li><Link to="/programme">Eclairages</Link></li>
-								<li><Link to="/programme">Bagagerie</Link></li>
+								<li><Link to="/">Eclairages</Link></li>
+								<li><Link to="/">Bagagerie</Link></li>
 							</ul>
 						</li>
 						<li>Nos bons plans</li>
